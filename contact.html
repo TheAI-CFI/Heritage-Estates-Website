@@ -23,8 +23,21 @@
 <main>
 <section class="center">
 <p class="lead">We are more than happy to help with any questions, scheduling tours, or offering quotes. Start planning your San Luis Obispo area vacation or wedding today!</p>
-<p>Booking a stay? Check dates and message us directly on <a href="https://www.airbnb.com/rooms/688028">Airbnb</a>.</p>
-<p>For weddings, events and everything else, send us a message on <a href="https://www.facebook.com/TheHeritageEstates">Facebook</a>.</p>
+<form class="inquiry" action="https://formsubmit.co/bookings@theheritageestates.net" method="POST">
+<label>Name<input name="name" required autocomplete="name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
+<label>I'm interested in<select name="interest"><option>Wedding</option><option>Other event</option><option>Vacation stay</option><option>Tour</option><option>Something else</option></select></label>
+<label>Event or stay date (optional)<input name="date" placeholder="e.g. June 2027"></label>
+<label>Number of guests (optional)<input name="guests" inputmode="numeric"></label>
+<label class="full">Message<textarea name="message" rows="5" required></textarea></label>
+<input type="hidden" name="_subject" value="New inquiry from theheritageestates.net">
+<input type="hidden" name="_template" value="table">
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<p class="full center"><button class="btn" type="submit">Send inquiry</button></p>
+</form>
+<p>Booking a stay? You can also check dates and message us directly on <a href="https://www.airbnb.com/rooms/688028">Airbnb</a>.</p>
+<p>We're also on <a href="https://www.facebook.com/TheHeritageEstates">Facebook</a>.</p>
 </section>
 </main>
 <footer>
