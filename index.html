@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Heritage Estates | Arroyo Grande Vacation Rental &amp; Wedding Venue</title>
 <meta name="description" content="A private 5-acre ranch in the hills of Arroyo Grande, California, for vacations, weddings and events.">
-<link rel="stylesheet" href="style.css?v=3">
+<meta property="og:title" content="The Heritage Estates | Arroyo Grande Vacation Rental &amp; Wedding Venue">
+<meta property="og:description" content="A private 5-acre ranch in the hills of Arroyo Grande, California, for vacations, weddings and events.">
+<meta property="og:image" content="https://www.theheritageestates.net/images/home-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-<header><nav class="nav">
+<header><nav class="nav" aria-label="Main">
 <a class="brand" href="index.html">The Heritage Estates</a>
-<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr-only">Menu</b></button>
 <ul id="menu">
 <li><a href="index.html" aria-current="page">Home</a></li>
 <li><a href="rental.html">Vacation Rental</a></li>
@@ -18,34 +24,60 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav></header>
-<section class="hero hero-top" style="background-image:url(images/home-1.jpg)"><div>
-<h1>Welcome to The Heritage Estates</h1>
-<p>A private 5-acre ranch in the hills of Arroyo Grande, California</p>
-</div></section>
 <main>
-<section>
-<p class="lead">The Heritage Estates is a Central Coast vacation rental on a private 5-acre ranch in the hills of Arroyo Grande. It is a beautiful home for family vacations, and a scenic setting for weddings and events.</p>
-<div class="cols center">
-<div><h2>Stay</h2><p>A 5,700 sq ft home that sleeps up to 18 guests, minutes from the beach and 20 minutes south of San Luis Obispo.</p><a class="btn" href="rental.html">Vacation Rental</a></div>
-<div><h2>Celebrate</h2><p>Host up to 150 guests with a 40'x50' barn, open lawns, and tables, chairs and a dance floor included.</p><a class="btn" href="weddings.html">Weddings &amp; Events</a></div>
+<section class="intro wrap">
+<span class="eyebrow">Arroyo Grande · Central Coast, California</span>
+<h1>Welcome to The Heritage Estates</h1>
+<p class="lead">A private 5-acre ranch in the hills of Arroyo Grande. A beautiful home for family vacations, and a scenic setting for weddings and events.</p>
+</section>
+<figure class="feature"><img src="images/home-1.jpg" alt="Aerial view of the house and gardens at The Heritage Estates" width="1500" height="1041"></figure>
+<div class="stats">
+<div><strong>5</strong><span>private acres</span></div>
+<div><strong>5,700</strong><span>sq ft home</span></div>
+<div><strong>18</strong><span>overnight guests</span></div>
+<div><strong>150</strong><span>event guests</span></div>
+</div>
+<section class="section">
+<div class="wrap">
+<div class="section-head"><span class="eyebrow">Two ways to enjoy it</span><h2>Stay or celebrate</h2></div>
+<div class="cards">
+<a class="card" href="rental.html"><img src="images/home-2.jpg" alt="The house and front garden" loading="lazy"><div class="card-body"><h3>Vacation Rental</h3><p>A 5,700 sq ft home that sleeps up to 18 guests, minutes from the beach and 20 minutes south of San Luis Obispo.</p><span class="more">See the home</span></div></a>
+<a class="card" href="weddings.html"><img src="images/kristy-ryan-1.jpg" alt="An outdoor wedding ceremony on the lawn" loading="lazy"><div class="card-body"><h3>Weddings &amp; Events</h3><p>Host up to 150 guests with a 40'x50' barn, open lawns, and tables, chairs and a dance floor included.</p><span class="more">Plan your event</span></div></a>
+</div>
 </div>
 </section>
-<section>
+<section class="section alt">
+<div class="wrap">
+<div class="section-head"><span class="eyebrow">The grounds</span><h2>Gardens, lawns and open sky</h2></div>
 <div class="gallery">
-<figure><img src="images/home-2.jpg" alt="The Heritage Estates" loading="lazy"></figure>
-<figure><img src="images/kristy-ryan-1.jpg" alt="Kristy and Ryan's wedding at The Heritage Estates" loading="lazy"><figcaption>Kristy and Ryan Wedding · photo by kenkienow.com</figcaption></figure>
-<figure><img src="images/rental-lawn.jpg" alt="The lawn, gardens and barn" loading="lazy"></figure>
+<figure><img src="images/rental-garden.jpg" alt="Gardens and lawn with the barn behind" loading="lazy"></figure>
+<figure><img src="images/rental-path.jpg" alt="Garden path, lawn and barn" loading="lazy"></figure>
+<figure><img src="images/rental-lawn.jpg" alt="The lawn and gardens" loading="lazy"></figure>
+</div>
 </div>
 </section>
-<section class="band center">
+<section class="cta">
 <h2>Questions?</h2>
-<p>For quotes, tours, general inquiries and more information, get in touch through our contact page.</p>
-<a class="btn" href="contact.html">Contact us</a>
+<p>For quotes, tours and general inquiries, send us a note and we'll get back to you.</p>
+<div class="actions"><a class="btn" href="contact.html">Contact us</a></div>
 </section>
 </main>
 <footer>
-<p>The Heritage Estates · Arroyo Grande, California · <a href="contact.html">Contact us</a></p>
-<p><a href="https://www.airbnb.com/rooms/688028">Airbnb</a><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></p>
+<div class="foot">
+<div><a class="brand" href="index.html">The Heritage Estates</a><p>A private 5-acre ranch in the hills of Arroyo Grande, California.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="rental.html">Vacation Rental</a></li>
+<li><a href="weddings.html">Weddings &amp; Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div>
+<div><h4>Connect</h4><ul>
+<li><a href="contact.html">Send an inquiry</a></li>
+<li><a href="https://www.airbnb.com/rooms/688028">Book on Airbnb</a></li>
+<li><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></li>
+</ul></div>
+</div>
+<div class="copy">&copy; The Heritage Estates · Arroyo Grande, California</div>
 </footer>
 <script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
 </body>

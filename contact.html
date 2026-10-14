@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact | The Heritage Estates</title>
 <meta name="description" content="Questions, tours and quotes for The Heritage Estates in Arroyo Grande, CA.">
-<link rel="stylesheet" href="style.css?v=3">
+<meta property="og:title" content="Contact | The Heritage Estates">
+<meta property="og:description" content="Questions, tours and quotes for The Heritage Estates in Arroyo Grande, CA.">
+<meta property="og:image" content="https://www.theheritageestates.net/images/home-1.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-<header><nav class="nav">
+<header><nav class="nav" aria-label="Main">
 <a class="brand" href="index.html">The Heritage Estates</a>
-<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span></span><b class="sr-only">Menu</b></button>
 <ul id="menu">
 <li><a href="index.html">Home</a></li>
 <li><a href="rental.html">Vacation Rental</a></li>
@@ -18,31 +24,55 @@
 <li><a href="contact.html" aria-current="page">Contact</a></li>
 </ul>
 </nav></header>
-<section class="page-head"><h1>Contact us</h1></section>
-<figure class="feature"><img src="images/contact.jpg" alt="The family behind The Heritage Estates, in front of the house"></figure>
 <main>
-<section class="center">
+<section class="intro wrap">
+<span class="eyebrow">Contact</span>
+<h1>Let's start planning</h1>
 <p class="lead">We are more than happy to help with any questions, scheduling tours, or offering quotes. Start planning your San Luis Obispo area vacation or wedding today!</p>
+</section>
+<section class="section" style="padding-top:16px">
+<div class="wrap contact-grid">
 <form class="inquiry" action="https://formsubmit.co/bookings@theheritageestates.net" method="POST">
+<h2>Send an inquiry</h2>
 <label>Name<input name="name" required autocomplete="name"></label>
 <label>Email<input type="email" name="email" required autocomplete="email"></label>
-<label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
+<label><span>Phone <small>(optional)</small></span><input type="tel" name="phone" autocomplete="tel"></label>
 <label>I'm interested in<select name="interest"><option>Wedding</option><option>Other event</option><option>Vacation stay</option><option>Tour</option><option>Something else</option></select></label>
-<label>Event or stay date (optional)<input name="date" placeholder="e.g. June 2027"></label>
-<label>Number of guests (optional)<input name="guests" inputmode="numeric"></label>
+<label><span>Event or stay date <small>(optional)</small></span><input name="date" placeholder="e.g. June 2027"></label>
+<label><span>Number of guests <small>(optional)</small></span><input name="guests" inputmode="numeric"></label>
 <label class="full">Message<textarea name="message" rows="5" required></textarea></label>
 <input type="hidden" name="_subject" value="New inquiry from theheritageestates.net">
 <input type="hidden" name="_template" value="table">
-<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-<p class="full center"><button class="btn" type="submit">Send inquiry</button></p>
+<input type="hidden" name="_next" value="https://www.theheritageestates.net/thanks.html">
+<input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="full"><button class="btn" type="submit">Send inquiry</button></div>
 </form>
-<p>Booking a stay? You can also check dates and message us directly on <a href="https://www.airbnb.com/rooms/688028">Airbnb</a>.</p>
-<p>We're also on <a href="https://www.facebook.com/TheHeritageEstates">Facebook</a>.</p>
+<aside class="contact-aside">
+<img src="images/contact.jpg" alt="The family behind The Heritage Estates, in front of the house" loading="lazy">
+<h3>Booking a stay?</h3>
+<p>You can also check dates and message us directly on <a href="https://www.airbnb.com/rooms/688028">Airbnb</a>.</p>
+<h3>Follow along</h3>
+<p>See weddings and updates from the ranch on <a href="https://www.facebook.com/TheHeritageEstates">Facebook</a>.</p>
+</aside>
+</div>
 </section>
 </main>
 <footer>
-<p>The Heritage Estates · Arroyo Grande, California · <a href="contact.html">Contact us</a></p>
-<p><a href="https://www.airbnb.com/rooms/688028">Airbnb</a><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></p>
+<div class="foot">
+<div><a class="brand" href="index.html">The Heritage Estates</a><p>A private 5-acre ranch in the hills of Arroyo Grande, California.</p></div>
+<div><h4>Explore</h4><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="rental.html">Vacation Rental</a></li>
+<li><a href="weddings.html">Weddings &amp; Events</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul></div>
+<div><h4>Connect</h4><ul>
+<li><a href="contact.html">Send an inquiry</a></li>
+<li><a href="https://www.airbnb.com/rooms/688028">Book on Airbnb</a></li>
+<li><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></li>
+</ul></div>
+</div>
+<div class="copy">&copy; The Heritage Estates · Arroyo Grande, California</div>
 </footer>
 <script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
 </body>
