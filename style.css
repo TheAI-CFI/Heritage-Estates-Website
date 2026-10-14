@@ -32,6 +32,19 @@ h2{font-weight:normal;letter-spacing:.06em;text-transform:uppercase;text-align:c
 .band{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 footer{text-align:center;padding:32px 16px;color:var(--muted);font-family:system-ui,sans-serif;font-size:.85rem}
 footer a{margin:0 8px}
-.hero-top{align-items:flex-start;background-position:center 25%}
+.hero-top{align-items:flex-start;background-position:center top;min-height:0;aspect-ratio:1500/1041;max-height:none}
+@media (max-width:760px){.hero-top{aspect-ratio:auto;min-height:75vh;background-position:center}}
 .hero-top::before{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.2) 40%,rgba(0,0,0,0) 65%)}
 .hero-top div{padding-top:6vh}
+.menu-btn{display:none;background:none;border:1px solid var(--line);padding:6px 12px;font:inherit;font-family:system-ui,sans-serif;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);cursor:pointer}
+@media (max-width:760px){
+.menu-btn{display:block}
+.nav ul{display:none;width:100%;flex-direction:column;gap:0;border-top:1px solid var(--line);margin-top:8px}
+.nav ul.open{display:flex}
+.nav ul a{display:block;padding:12px 0}
+}
+.page-head{text-align:center;padding:48px 16px 24px}
+.page-head h1{font-weight:normal;letter-spacing:.06em;text-transform:uppercase;font-size:clamp(1.8rem,5vw,2.8rem);margin:0}
+.page-head p{margin:.4em 0 0;color:var(--muted);font-size:1.1rem}
+.feature{max-width:1100px;margin:0 auto;padding:0 16px}
+.feature img{width:100%;display:block}

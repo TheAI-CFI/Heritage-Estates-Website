@@ -10,16 +10,17 @@
 <body>
 <header><nav class="nav">
 <a class="brand" href="index.html">The Heritage Estates</a>
-<ul>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu">
 <li><a href="index.html">Home</a></li>
-<li><a href="https://www.airbnb.com/rooms/688028">Vacation Rental</a></li>
+<li><a href="rental.html">Vacation Rental</a></li>
 <li><a href="weddings.html" aria-current="page">Weddings &amp; Events</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav></header>
 <section class="hero" style="background-image:url(images/wedding-sunset.jpg)"><div>
-<h1>Host your dream wedding or event at The Heritage Estate</h1>
-<p>Arroyo Grande, CA</p>
+<h1>Weddings &amp; Events</h1>
+<p>Host your dream wedding or event in Arroyo Grande, CA</p>
 <a class="btn" href="contact.html">Request a quote</a>
 </div></section>
 <main>
@@ -61,5 +62,6 @@
 <p>The Heritage Estates · Arroyo Grande, California · <a href="contact.html">Contact us</a></p>
 <p><a href="https://www.airbnb.com/rooms/688028">Airbnb</a><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></p>
 </footer>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
 </body>
 </html>

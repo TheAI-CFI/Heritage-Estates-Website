@@ -10,16 +10,16 @@
 <body>
 <header><nav class="nav">
 <a class="brand" href="index.html">The Heritage Estates</a>
-<ul>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<ul id="menu">
 <li><a href="index.html">Home</a></li>
-<li><a href="https://www.airbnb.com/rooms/688028">Vacation Rental</a></li>
+<li><a href="rental.html">Vacation Rental</a></li>
 <li><a href="weddings.html">Weddings &amp; Events</a></li>
 <li><a href="contact.html" aria-current="page">Contact</a></li>
 </ul>
 </nav></header>
-<section class="hero" style="background-image:url(images/contact.jpg);min-height:45vh"><div>
-<h1>Contact us</h1>
-</div></section>
+<section class="page-head"><h1>Contact us</h1></section>
+<figure class="feature"><img src="images/contact.jpg" alt="The family behind The Heritage Estates, in front of the house"></figure>
 <main>
 <section class="center">
 <p class="lead">We are more than happy to help with any questions, scheduling tours, or offering quotes. Start planning your San Luis Obispo area vacation or wedding today!</p>
@@ -31,5 +31,6 @@
 <p>The Heritage Estates · Arroyo Grande, California · <a href="contact.html">Contact us</a></p>
 <p><a href="https://www.airbnb.com/rooms/688028">Airbnb</a><a href="https://www.facebook.com/TheHeritageEstates">Facebook</a></p>
 </footer>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
 </body>
 </html>
