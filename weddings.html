@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header><nav class="nav" aria-label="Main">
@@ -38,7 +38,7 @@
 <h2>What to love</h2>
 <ul class="checks">
 <li>Large private outdoor spaces with no shortage of peaceful, scenic views</li>
-<li>A 40'x50' barn and home on site</li>
+<li>A 2,000 sq ft (40'x50') barn and home on site</li>
 <li>Dance floor, tables and chairs included with your stay</li>
 </ul>
 </div>
@@ -53,6 +53,21 @@
 </div>
 </section>
 <section class="section alt">
+<div class="wrap split barn">
+<img src="images/kristy-ryan-2.jpg" alt="A wedding reception inside the barn" loading="lazy">
+<div>
+<span class="eyebrow">The barn</span>
+<h2>2,000 sq ft of reception space</h2>
+<p class="lead">The 40'x50' barn is ready for your dinner and dancing, rain or shine, just steps from the ceremony lawn. Tables, chairs and a dance floor are included.</p>
+<ul class="checks">
+<li>Indoor event space for receptions and dinners</li>
+<li>Dance floor, tables and chairs included</li>
+<li>Onsite restrooms</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="section">
 <div class="wrap">
 <div class="section-head"><span class="eyebrow">Included</span><h2>Venue amenities</h2></div>
 <ul class="amen">
@@ -61,7 +76,7 @@
 </ul>
 </div>
 </section>
-<section class="section">
+<section class="section alt">
 <div class="wrap">
 <div class="section-head"><span class="eyebrow">Real celebrations</span><h2>Weddings at The Heritage Estates</h2></div>
 <div class="gallery">
@@ -97,6 +112,7 @@
 </div>
 <div class="copy">&copy; The Heritage Estates · Arroyo Grande, California</div>
 </footer>
-<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
+<dialog class="lightbox" aria-label="Photo"><img alt=""><button type="button" aria-label="Close">&times;</button></dialog>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))});var lb=document.querySelector(".lightbox"),li=lb.querySelector("img");document.querySelectorAll(".gallery img").forEach(function(i){i.addEventListener("click",function(){li.src=i.src;li.alt=i.alt;lb.showModal()})});lb.addEventListener("click",function(){lb.close()})</script>
 </body>
 </html>

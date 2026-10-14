@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header><nav class="nav" aria-label="Main">
@@ -31,7 +31,7 @@
 <p class="lead">A 5,700 sq ft home on a private 5-acre ranch, minutes from the beach and 20 minutes south of San Luis Obispo.</p>
 <div class="actions"><a class="btn" href="https://www.airbnb.com/rooms/688028">Check availability on Airbnb</a></div>
 </section>
-<figure class="feature wide"><img src="images/rental-house.jpg" alt="The house at The Heritage Estates" width="2000" height="1333"></figure>
+<figure class="feature wide"><img src="images/house-front.jpg" alt="The front porch and gardens of the house" width="1800" height="1200"></figure>
 <section class="section">
 <div class="wrap split">
 <div>
@@ -56,14 +56,33 @@
 </section>
 <section class="section alt">
 <div class="wrap">
-<div class="section-head"><span class="eyebrow">Photos</span><h2>Around the property</h2></div>
+<div class="section-head"><span class="eyebrow">Photos</span><h2>Inside the home</h2></div>
+<h3 class="gallery-title">Living &amp; dining</h3>
 <div class="gallery mosaic">
-<figure class="big"><img src="images/rental-garden.jpg" alt="Gardens and lawn with the barn behind" loading="lazy"></figure>
-<figure><img src="images/rental-fountain.jpg" alt="A rose beside the garden fountain" loading="lazy"></figure>
+<figure class="big"><img src="images/living-room.jpg" alt="Two-story living room with fireplace" loading="lazy"></figure>
+<figure><img src="images/kitchen.jpg" alt="Kitchen with island and seating" loading="lazy"></figure>
+<figure><img src="images/kitchen-dining.jpg" alt="Farmhouse dining table by the kitchen" loading="lazy"></figure>
+<figure><img src="images/family-room.jpg" alt="Family room with views of the garden" loading="lazy"></figure>
+<figure><img src="images/dining-room.jpg" alt="Dining room opening onto the deck" loading="lazy"></figure>
+<figure><img src="images/living-fireplace.jpg" alt="Living room fireplace and loft" loading="lazy"></figure>
+</div>
+<h3 class="gallery-title">Bedrooms &amp; baths</h3>
+<div class="gallery mosaic">
+<figure class="big"><img src="images/bedroom-primary.jpg" alt="Primary bedroom with doors to the balcony" loading="lazy"></figure>
+<figure><img src="images/bedroom-2.jpg" alt="Bedroom with king bed and sitting chair" loading="lazy"></figure>
+<figure><img src="images/bedroom-3.jpg" alt="Bedroom with queen bed" loading="lazy"></figure>
+<figure><img src="images/bedroom-4.jpg" alt="Bedroom with built-in shelves and twin bed" loading="lazy"></figure>
+<figure><img src="images/bath-primary.jpg" alt="Primary bath with soaking tub and shower" loading="lazy"></figure>
+<figure><img src="images/bedroom-5.jpg" alt="Bedroom with sitting area" loading="lazy"></figure>
+</div>
+<h3 class="gallery-title">Outdoors</h3>
+<div class="gallery mosaic">
+<figure class="big"><img src="images/garden-house.jpg" alt="Formal garden and fountain with the house behind" loading="lazy"></figure>
+<figure><img src="images/deck.jpg" alt="Covered deck with outdoor dining" loading="lazy"></figure>
+<figure><img src="images/garden-fountain.jpg" alt="Garden fountain and topiaries" loading="lazy"></figure>
+<figure><img src="images/house-back.jpg" alt="The back of the house and gardens" loading="lazy"></figure>
+<figure><img src="images/grounds-view.jpg" alt="View over the gardens and lawn" loading="lazy"></figure>
 <figure><img src="images/rental-barn.jpg" alt="The barn" loading="lazy"></figure>
-<figure><img src="images/rental-lawn.jpg" alt="The lawn and gardens" loading="lazy"></figure>
-<figure><img src="images/rental-hedges.jpg" alt="Hedges and fountain on the lawn" loading="lazy"></figure>
-<figure><img src="images/rental-path.jpg" alt="Garden path, lawn and barn" loading="lazy"></figure>
 </div>
 </div>
 </section>
@@ -89,6 +108,7 @@
 </div>
 <div class="copy">&copy; The Heritage Estates · Arroyo Grande, California</div>
 </footer>
-<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
+<dialog class="lightbox" aria-label="Photo"><img alt=""><button type="button" aria-label="Close">&times;</button></dialog>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))});var lb=document.querySelector(".lightbox"),li=lb.querySelector("img");document.querySelectorAll(".gallery img").forEach(function(i){i.addEventListener("click",function(){li.src=i.src;li.alt=i.alt;lb.showModal()})});lb.addEventListener("click",function(){lb.close()})</script>
 </body>
 </html>

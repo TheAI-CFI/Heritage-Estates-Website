@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 <header><nav class="nav" aria-label="Main">
@@ -48,6 +48,7 @@
 </div>
 <div class="copy">&copy; The Heritage Estates · Arroyo Grande, California</div>
 </footer>
-<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))})</script>
+<dialog class="lightbox" aria-label="Photo"><img alt=""><button type="button" aria-label="Close">&times;</button></dialog>
+<script>document.querySelector(".menu-btn").addEventListener("click",function(){var m=document.getElementById("menu");this.setAttribute("aria-expanded",m.classList.toggle("open"))});var lb=document.querySelector(".lightbox"),li=lb.querySelector("img");document.querySelectorAll(".gallery img").forEach(function(i){i.addEventListener("click",function(){li.src=i.src;li.alt=i.alt;lb.showModal()})});lb.addEventListener("click",function(){lb.close()})</script>
 </body>
 </html>
